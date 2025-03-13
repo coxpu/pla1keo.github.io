@@ -124,25 +124,25 @@ const items = [
         yellow: { damage: 2, hpmax: 5 }
     },
     {
-        imageSrc: `${basePath}imgs/head/bad.png`,
+        imageSrc: `${basePath}imgs//bad.png`,
         stats: { krit: 10 },
         upg: 'krit',
         yellow: {}
     },
     {
-        imageSrc: `${basePath}imgs/head/ironman.png`,
+        imageSrc: `${basePath}imgs//ironman.png`,
         stats: { krit: 2 },
         upg: 'krit',
         yellow: {}
     },
     {
-        imageSrc: `${basePath}imgs/head/pepe.png`,
+        imageSrc: `${basePath}imgs//pepe.png`,
         stats: { krit: 1 },
         upg: 'krit',
         yellow: {}
     },
     {
-        imageSrc: `${basePath}imgs/head/tikva.png`,
+        imageSrc: `${basePath}imgs//tikva.png`,
         stats: { deff: 2, damage: 2, krit: 2 },
         upg: 'hpmin',
         yellow: {}
@@ -473,6 +473,10 @@ function showPereshiv(slot) {
     switch (slot) {
         case 'head':
             items = [
+                {
+                    name: 'kolco',
+                    yellow: { deff: 3, damage: 3, krit: 1, hpmax: 19 }
+                },
                 {
                     name: 'tango',
                     yellow: { deff: 2, damage: 1, krit: 1, hpmax: 10 }
